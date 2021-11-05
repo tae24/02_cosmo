@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="format-detection" content="email=no,telephone=no,address=no">
+  <meta name="description" content="おしゃれな化粧品">
+  <meta name="format-detection" content="telephone=no">
+  <title>【02_cosmo】</title>
+  <!-- 外部ファイルの読み込み -->
+  <!-- <script src="【ファイルのURL】"></script> -->
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- スライダー -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+</head>
+<body>
+  <header class="header header__container">
+    <!-- <div class="header__wrapper"> -->
+      <h1 class="header__title">awesome cosme</h1>
+      <!-- 本当はmainに入れるところ -->
+      <!-- 大文字に -->
+      <!-- ハンバーガーボタン -->
+      <div class="burgerBtn burger__btn">
+        <span class="bar bar__top"></span>
+        <span class="bar bar__bottom"></span>
+      </div>
+      <nav class="globalNav header__nav">
+        <ul class="globalNavMenu globalNav__menu">
+          <li class="globalNavMenu__list"><a class="globalNavMenu__link" href="#aboutPage">about</a></li>
+          <li class="globalNavMenu__list"><a class="globalNavMenu__link" href="#productPage">product</a></li>
+          <li class="globalNavMenu__list"><a class="globalNavMenu__link" href="#newsPage">news</a></li>
+          <li class="globalNavMenu__list"><a class="globalNavMenu__link" href="#accessPage">access</a></li>
+          <li class="globalNavMenu__list"><a class="globalNavMenu__link" href="#faqPage">faq</a></li>
+          <!-- 大文字に -->
+        </ul>
+      </nav>
+    <!-- </div> -->
+  </header>
+  <!-- main -->
+  <main class="main main__container">
+    <!-- <picture> -->
+      <!-- <source media="(min-width:560px)" srcset="images/main2_pc.jpg" alt="白を基調とした、スプレーの化粧水の写真"> -->
+      <img class="main__img" src="images/main_sp.jpg" alt="白を基調とした、スプレーの化粧水の写真" width="391" height="635">
+    <!-- </picture> -->
+    <div class="slider slider__container">
+      <div><img class="slider__img" src="images/main2_pc.jpg" width="" height="800px" alt=""></div>
+      <div><img class="slider__img" src="images/main_pc.jpg" width="" height="800px" alt=""></div>
+    </div>
+    <div class="main__wrapper slideIn downAnime">
+      <p class="main__lead slideI__inner downAnimeInner">AWESOME COSME</p>
+      <p class="main__text slideI__inner">今を生きる現代女性へ向けて誕生した「awesome cosme」。<br>そのコンセプトと同じように、しなやかさと輝きを放つ、魅力的な女性たちのキレイの秘密に迫る。</p>
+    </div>
+    <div class="vertical__box">
+      <p class="vertical__text">© AWESOME COSME</p>
+    </div>
+  </main>
+  <!-- ABOUT -->
+  <section class="about about__container" id="aboutPage">
+    <!-- ーABOUT疑似要素 -->
+    <div class="about__flex">
+      <h2 class="about__title pseudo__element title__parts">今を生きる<br>現代女性のために。</h2>
+      <p class="about__text">素敵なヘアスタイルは健康な頭皮から生まれます。<br>ヘアスタイルをデザインする上で一番大切なのは、素材である毛髪です。<br>理想とするヘアスタイルを創る上で、一人ひとり異なった素材をいかに生かせるか、くつろぎと満足を味わっていただけるよう、一同真剣に取り組んでまいります。</p>
+    </div>
+    <div class="about__imgBox">
+      <!-- <a href="javascript:void(0);" data-video-id="td3f64IH2Zs" class="js-modal-video"> -->
+        <picture>
+          <source media="(min-width:560px)" srcset="images/about_pc.jpg" alt="ファンデーションが並んだ写真">
+          <img class="about__img" src="images/about_sp.jpg" alt="ファンデーションが並んだ写真" width="300px" height="175px">
+        </picture>
+      <!-- </a> -->
+      <!-- ポップアップ・・・・・・ -->
+    </div>
+    <!-- 動画 -->
+    <div class="about__videoBox">
+      <video class="about__video js-modal-video" data-video-id="td3f64IH2Zs" src="images/video0.mp4" controls width="300px" height="175px"></video>
+    </div>
+  </section>
+  <!-- PRODUCT -->
+  <section class="product product__container" id="productPage">
+    <!-- ーPRODUCT疑似要素 -->
+    <h2 class="product__title pseudo__element title__parts">商品一覧</h2>
+    <!-- newsまる疑似要素 追加-->
+    <ul class="product__cards card__area sliderCard">
+      <li class="product__unit card__unit">
+        <div class="product__box">
+          <span class="product__emphasis emphasis__item">NEWS</span>
+          <div class="product__imgBox card__imgBox">
+            <picture>
+              <source media="(min-width:560px)" srcset="images/pro_topleft_pc.jpg" alt="ファンデーションが並んだ写真">
+              <img class="product__img card__img" src="images/product_sp.jpg" alt="ファンデーションが並んだ写真" width="300px" height="350px">
+            </picture>
+          </div>
+          <div class="product__description card__description">
+            <p class="product__tag card__tag">01</p>
+            <p class="product__heading card__heading">ファンデーション</p>
+            <p class="product__tax card__tax">&yen;4,200 (+tax)</p>
+            <p class="product__text card__text">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</p>
+          </div>
+        </div>
+      </li>
+      <li class="product__unit card__unit">
+        <div class="product__box">
+          <span class="product__emphasis emphasis__item">NEWS</span>
+          <div class="product__imgBox card__imgBox">
+            <picture>
+              <source media="(min-width:560px)" srcset="images/pro_topcenter_pc.jpg" alt="ファンデーションが並んだ写真">
+              <img class="product__img card__img" src="images/product_sp.jpg" alt="ファンデーションが並んだ写真" width="300px" height="350px">
+            </picture>
+          </div>
+          <div class="product__description card__description">
+            <p class="product__tag card__tag">02</p>
+            <p class="product__heading card__heading">バスグッズ</p>
+            <p class="product__tax card__tax">&yen;4,200 (+tax)</p>
+            <p class="product__text card__text">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</p>
+          </div>
+        </div>
+      </li>
+      <li class="product__unit card__unit">
+        <div class="product__box">
+          <div class="product__imgBox card__imgBox">
+            <picture>
+              <source media="(min-width:560px)" srcset="images/pro_topright_pc.jpg" alt="ファンデーションが並んだ写真">
+              <img class="product__img card__img" src="images/product_sp.jpg" alt="ファンデーションが並んだ写真" width="300px" height="350px">
+            </picture>
+          </div>
+          <div class="product__description card__description">
+            <p class="product__tag card__tag">03</p>
+            <p class="product__heading card__heading">アイシャドー</p>
+            <p class="product__tax card__tax">&yen;4,200 (+tax)</p>
+            <p class="product__text card__text">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</p>
+          </div>
+        </div>
+      </li>
+      <li class="product__unit card__unit">
+        <div class="product__box">
+          <div class="product__imgBox card__imgBox">
+            <picture>
+              <source media="(min-width:560px)" srcset="images/pro_downleft_pc.jpg" alt="ファンデーションが並んだ写真">
+              <img class="product__img card__img" src="images/product_sp.jpg" alt="ファンデーションが並んだ写真" width="300px" height="350px">
+            </picture>
+          </div>
+          <div class="product__description card__description">
+            <p class="product__tag card__tag">04</p>
+            <p class="product__heading card__heading">アイライナー</p>
+            <p class="product__tax card__tax">&yen;4,200 (+tax)</p>
+            <p class="product__text card__text">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</p>
+        </div>
+        </div>
+      </li>
+      <li class="product__unit card__unit">
+        <div class="product__box">
+          <div class="product__imgBox card__imgBox">
+            <picture>
+              <source media="(min-width:560px)" srcset="images/pro_downcenter_pc.jpg" alt="ファンデーションが並んだ写真">
+              <img class="product__img card__img" src="images/product_sp.jpg" alt="ファンデーションが並んだ写真" width="300px" height="350px">
+            </picture>
+          </div>
+          <div class="product__description card__description">
+            <p class="product__tag card__tag">05</p>
+            <p class="product__heading card__heading">リップクリーム</p>
+            <p class="product__tax card__tax">&yen;4,200 (+tax)</p>
+            <p class="product__text card__text">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</p>
+          </div>
+        </div>
+      </li>
+      <li class="product__unit card__unit">
+        <div class="product__box">
+          <div class="product__imgBox card__imgBox">
+            <picture>
+              <source media="(min-width:560px)" srcset="images/pro_downright_pc.jpg" alt="ファンデーションが並んだ写真">
+              <img class="product__img card__img" src="images/product_sp.jpg" alt="ファンデーションが並んだ写真" width="300px" height="350px">
+            </picture>
+          </div>
+          <div class="product__description card__description">
+            <p class="product__tag card__tag">06</p>
+            <p class="product__heading card__heading">スキンクリーム</p>
+            <p class="product__tax card__tax">&yen;4,200 (+tax)</p>
+            <p class="product__text card__text">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <!-- 小文字に -->
+    <!-- スライダー -->
+  </section>
+  <!-- GIFT -->
+  <section class="gift gift__container">
+    <!-- ーGIFTの疑似要素 -->
+    <div class="gift__wrapper">
+      <div class="gift__position">
+        <h2 class="gift__title">大切な人への<br>贈り物に。</h2>
+        <p class="gift__text">awesome 公式ショップがリコメンドする、ギフトセット。<br> 大切な方へ、お世話になった方へ、自分へのプレゼントに、ホリスティックな心地よさをおたのしみください。 </p>
+      </div>
+      <div class="gift__btnBox">
+        <button class="gift__btn btn"><a class="gift__link btn__link" href="#">MORE</a></button>
+      </div>
+    </div>
+    <!-- 矢印→疑似要素 -->
+    <div class="gift__imgBox">
+      <picture>
+        <source media="(min-width:560px)" srcset="images/gift_pc.jpg" alt="ファンデーションが並んだ写真">
+        <img class="gift__img" src="images/gifttop_sp.jpg" alt="ファンデーションが並んだ写真" width="414px" height="250px">
+      </picture>
+    </div>
+    <!-- img上に -->
+  </section>
+  <!-- BLOG -->
+  <section class="blog blog__container" id="newsPage">
+    <!-- -BLOG疑似要素 -->
+    <h2 class="blog__title title__parts">ブログ</h2>
+    <div class="blog__slider">
+      <ul class="blog__area sliderBlog">
+        <li class="blog__unit">
+          <article class="blog__box">
+            <div class="blog__sentence">
+              <h3 class="blog__sentenceTitle">awesome 公式ショップがリコメンドする…</h3>
+              <p class="blog__text">awesome 公式ショップがリコメンドする、ギフトセット。大切な方へ、お世話になった…</p>
+            </div>
+            <picture>
+              <source media="(min-width:560px)" srcset="images/blog_left_pc.jpg" alt="シャンプーボトルとチュウリップの写真">
+              <img class="blog__img" src="images/blog_left_sp.jpg" alt="シャンプーボトルとチュウリップの写真" width="185px" height="140px">
+            </picture>
+          </article>
+        </li>
+        <li class="blog__unit">
+          <article class="blog__box">
+            <div class="blog__sentence">
+              <h3 class="blog__sentenceTitle">awesome 公式ショップがリコメンドする…</h3>
+              <p class="blog__text">awesome 公式ショップがリコメンドする、ギフトセット。大切な方へ、お世話になった…</p>
+            </div>
+            <picture>
+              <source media="(min-width:560px)" srcset="images/blog_right_pc.jpg" alt="色々な化粧品の写真">
+              <img class="blog__img" src="images/blog_right_sp.jpg" alt="色々な化粧品の写真" width="185px" height="">
+            </picture>
+          </article>
+        </li>
+        <li class="blog__unit">
+          <article class="blog__box">
+            <div class="blog__sentence">
+              <h3 class="blog__sentenceTitle">awesome 公式ショップがリコメンドする…</h3>
+              <p class="blog__text">awesome 公式ショップがリコメンドする、ギフトセット。大切な方へ、お世話になった…</p>
+            </div>
+            <picture>
+              <source media="(min-width:560px)" srcset="images/blog_left_pc.jpg" alt="シャンプーボトルとチュウリップの写真">
+              <img class="blog__img" src="images/blog_left_sp.jpg" alt="シャンプーボトルとチュウリップの写真" width="185px" height="">
+            </picture>
+          </article>
+        </li>
+        <li class="blog__unit">
+          <article class="blog__box">
+            <div class="blog__sentence">
+              <h3 class="blog__sentenceTitle">awesome 公式ショップがリコメンドする…</h3>
+              <p class="blog__text">awesome 公式ショップがリコメンドする、ギフトセット。大切な方へ、お世話になった…</p>
+            </div>
+            <picture>
+              <source media="(min-width:560px)" srcset="images/blog_right_pc.jpg" alt="色々な化粧品の写真">
+              <img class="blog__img" src="images/blog_right_sp.jpg" alt="色々な化粧品の写真" width="185px" height="">
+            </picture>
+          </article>
+        </li>
+        <li class="blog__unit">
+          <article class="blog__box">
+            <div class="blog__sentence">
+              <h3 class="blog__sentenceTitle">awesome 公式ショップがリコメンドする…</h3>
+              <p class="blog__text">awesome 公式ショップがリコメンドする、ギフトセット。大切な方へ、お世話になった…</p>
+            </div>
+            <picture>
+              <source media="(min-width:560px)" srcset="images/blog_left_pc.jpg" alt="シャンプーボトルとチュウリップの写真">
+              <img class="blog__img" src="images/blog_left_sp.jpg" alt="シャンプーボトルとチュウリップの写真" width="185px" height="">
+            </picture>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <!-- スライダー -->
+  </section>
+  <!-- ACCESS -->
+  <section class="access access__container" id="accessPage">
+    <div class="access__wrapper">
+      <!-- 追加したクラス -->
+      <h2 class="access__title sam__title">access</h2>
+      <!-- 疑似要ーー線入れる -->
+      <!-- <div class="access__body"> -->
+        <div class="access__mapArea googlemap-bw">
+          <!-- <iframe class="access__map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3241.8194271749694!2d139.7035838!3d35.6568203!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b598254d833%3A0x6f070d77172b156a!2z5riL6LC344K144Km44K544OT44Or!5e0!3m2!1sja!2sjp!4v1633757373920!5m2!1sja!2sjp" 
+          width="414px" height="200px" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+          <!-- pc版はcssで変更でいい？ -->
+          <iframe class="access__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1620.903285835231!2d139.70242360813!3d35.65713699504996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b31a00165ed%3A0x387c407b91e2ad68!2z5riL6LC344K544OI44Oq44O844Og!5e0!3m2!1sja!2sjp!4v1635382484403!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="access__addressArea">
+          <dl class="access__unit">
+            <dt class="access__menu">住所</dt>
+            <dd class="access__text">&#12306;150-0002 東京都渋谷区渋谷3丁目21-12</dd>
+            <dt class="access__menu">tel</dt>
+            <dd class="access__text">0120-0000-0000</dd>
+            <dt class="access__menu">fax</dt>
+            <dd class="access__text">0120-0000-0000</dd>
+            <dt class="access__menu conversion">e-mail</dt>
+            <!-- このままに大文字なしに -->
+            <dd class="access__text lower_case">sample@mailaddress.com</dd>
+            <!-- 小文字 -->
+            <!-- 線ーーー疑似要素 -->
+            <dt class="access__menu">道順</dt>
+            <dd class="access__text access__textLast">• 関越自動車道「川越IC」「鶴ヶ島IC」より約15分<br>• 圏央道「圏央鶴ヶ島IC」「坂戸IC」より約10分<br><span class="access__textSub">※約30台分の駐車場/屋根付きの駐輪場を完備しております。</span></dd>
+          </dl>
+        </div>
+      <!-- </div> -->
+    </div>
+  </section>
+  <!-- FAQ -->
+  <section class="faq faq__container" id="faqPage">
+    <div class="faq__wrapper">
+      <h2 class="faq__title sam__title">faq</h2>
+      <div class="faq__group">
+        <ul class="faq__area">
+          <li class="faq__unit">
+            <div class="faq__outer">
+              <p class="faq__question ">Q. 化粧品の使用期限はどの位ですか？</p>
+            </div>
+            <div class="faq__inner">
+              <p class="faq__answer">A. 大まかな使用期限 化粧品の使用期限は一般的に、未開封で3年、開封済で半年から1年といわれています。</p>
+            </div>
+          </li>
+          <li class="faq__unit">
+            <div class="faq__outer">
+              <p class="faq__question ">Q. 化粧品の使用期限はどの位ですか？</p>
+            </div>
+            <div class="faq__inner">
+              <p class="faq__answer">A. 大まかな使用期限 化粧品の使用期限は一般的に、未開封で3年、開封済で半年から1年といわれています。</p>
+            </div>
+          </li>
+          <li class="faq__unit">
+            <div class="faq__outer">
+              <p class="faq__question ">Q. 化粧品の使用期限はどの位ですか？</p>
+            </div>
+            <div class="faq__inner">
+              <p class="faq__answer">A. 大まかな使用期限 化粧品の使用期限は一般的に、未開封で3年、開封済で半年から1年といわれています。</p>
+            </div>
+          </li>
+          <li class="faq__unit">
+            <div class="faq__outer">
+              <p class="faq__question ">Q. 化粧品の使用期限はどの位ですか？</p>
+            </div>
+            <div class="faq__inner">
+              <p class="faq__answer">A. 大まかな使用期限 化粧品の使用期限は一般的に、未開封で3年、開封済で半年から1年といわれています。</p>
+            </div>
+          </li>
+          <li class="faq__unit">
+            <div class="faq__outer">
+              <p class="faq__question ">Q. 化粧品の使用期限はどの位ですか？</p>
+            </div>
+            <div class="faq__inner">
+              <p class="faq__answer">A. 大まかな使用期限 化粧品の使用期限は一般的に、未開封で3年、開封済で半年から1年といわれています。</p>
+            </div>
+          </li>
+          <li class="faq__unit">
+            <div class="faq__outer">
+              <p class="faq__question ">Q. 化粧品の使用期限はどの位ですか？</p>
+            </div>
+            <div class="faq__inner">
+              <p class="faq__answer">A. 大まかな使用期限 化粧品の使用期限は一般的に、未開封で3年、開封済で半年から1年といわれています。</p>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="footer footer__container">
+    <div class="footer__wrapper">
+      <div class="footer__flex">
+        <h2 class="footer__title">awesome cosme</h2>
+        <!-- 写真と逆 -->
+        <picture>
+          <source media="(min-width:560px)" srcset="images/footer_pc.jpg" alt="">
+          <img class="footer__img" src="images/footer_sp.jpg" alt="" width="414px" height="200px">
+        </picture>
+      </div>
+      <nav class="footerNav footer__nav">
+        <ul class="footerNavMenu footerNav__menu">
+          <li class="footerNavMenu__list">会社概要</li>
+          <li class="footerNavMenu__list">プライバシーポリシー</li>
+          <li class="footerNavMenu__list">利用規約</li>
+          <li class="footerNavMenu__list footerNavMenu__listMiddle">特定商取引法に基づく表記</li>
+          <li class="footerNavMenu__list">お問い合わせ</li>
+        </ul>
+      </nav>
+      <p class="footer__text conversion"><small>&copy;THREE 2021 ALL Rights Reserved.</small></p>
+      <!-- このまま -->
+    </div>
+  </footer>
+  <!-- ジェークエリー -->
+  <!-- ハンバーガー -->
+  <!-- アコーディオン -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- タイトル下からフェードイン -->
+  <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-5/js/8-5.js"></script>
+  <!-- ジェークエリーファイル -->
+  <script src="./js/script.js"></script>
+  <!-- スライダー -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/main.js"></script>
+
+  <!-- ポップアップ -->
+  <!-- <link rel="stylesheet" href="./path/to/modal-video.min.css" /> -->
+  <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script> -->
+  <!-- <script src="./path/to/jquery-modal-video.min.js"></script> -->
+  <!-- <script src="./js/main.js"></script> -->
+</body>
+</html>

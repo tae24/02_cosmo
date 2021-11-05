@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+.blog{
+  &__container{
+    background: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 95%, #FFF7F7 0%, #FFF7F7 5%);
+    padding: 3rem 0;
+    // ...を白の中に入れるためのpadding
+    margin-bottom: 10rem;
+    @include tab{
+      max-width: 136.6rem;
+      width: 100%;
+      margin: 0 auto;
+      padding: 13rem 0;
+      margin-bottom: 15.4rem;
+    }
+  }
+  &__slider{
+    width: 100%;
+    @include tab{
+      // padding-left: 5rem;
+      width: 75%;
+      // カードの表示幅
+    }
+  }
+  &__title{
+    font-size: 3rem;
+    margin-bottom: 3.2rem;
+    line-height: 4rem;
+    padding-top: 6rem;
+    margin-left: 2.3rem;
+    position:relative;
+    &::before{
+      content:"";
+      display:block;
+      width:4rem;
+      height:0.1rem;
+      background-color:#D3D3D3;
+      position:absolute;
+      top:0.8rem;
+      left:0;
+      @include tab{
+        margin-left: 3rem;
+        top: -1.2rem;
+      }
+      @include pc{
+        margin-left: 3rem;
+        top: -1.2rem;
+      }
+    }
+    &::after{
+      content:"blog";
+      display:block;
+      font-size: 1.2rem;
+      color:#2D1B0E;
+      position:absolute;
+      top:-1rem;
+      left:6rem;
+      font-family:Adobe Caslon Pro;
+      @include tab{
+        margin-left: 3rem;
+        top: -3rem;
+      }
+      @include pc{
+        margin-left: 3rem;
+        // ブログとの余白
+        top: -3rem;
+      }
+    }
+    @include tab{
+      font-size: 3.8rem;
+      // 上の白い余白
+      margin-top: 4.5rem;
+    }
+  }
+  &__box{
+    display: flex;
+    flex-direction:column-reverse;
+    max-width: 18.5rem;
+    width: 100%;
+    margin-left: auto;
+    padding-bottom: 2rem;
+    @include tab{
+
+    }
+    @include pc{
+      max-width: 40rem;
+      width: 100%;
+      margin-left: auto;
+    }
+  }
+  &__sentence{
+    margin: 0 auto;
+  }
+  &__sentenceTitle{
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.19rem;
+    margin-bottom: 0.5rem;
+    @include tab{
+
+    }
+    @include pc{
+      font-size: 1.8rem;
+      line-height: 3rem;
+    }
+  }
+  &__text{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.06rem;
+  }
+  &__img{
+    margin-bottom: 1rem;
+    max-width: 18.5rem;
+    width: 100%;
+    @include tab{
+      max-width: 20rem;
+      width: 100%;
+    }
+    @include pc{
+      max-width: 40rem;
+      width: 100%;
+    }
+  }
+}
+
+// スライダー矢印ボタン
+// 右の矢印
+.prev-arrow{
+    // ↓矢印の位置
+    position: absolute;
+    top: -8rem;
+    // left: 30rem;
+    left: 83%;
+    @include tab{
+      top: 5rem;
+      left: 104%;
+    }
+    @include pc{
+      top: 10rem;
+      left: 104%;
+    }
+}
+// 左の矢印
+.next-arrow {
+  // ↓矢印の位置
+  position: absolute;
+  top: -8rem;
+  // left: 25rem;
+  left: 67%;
+  @include tab{
+    top: 5rem;
+    left: 15%;
+  }
+  @include pc{
+    top: 10rem;
+    left: 6%;
+  }
+}
+
+
+// スライダー矢印ボタン
+// cssでの矢印
+// .prev-arrow{
+//   width: 3.7rem;
+//   height: 1rem;
+//   border-right: solid 1px #222222;
+//   border-bottom: solid 1px #222222;
+//   transform: skew(45deg);
+//   // ↓矢印の位置
+//   position: absolute;
+//   top: -8rem;
+//   left: 30rem;
+// }
+// .next-arrow {
+//   width: 3.7rem;
+//   height: 1rem;
+//   border-left: solid 1px #222222;
+//   border-bottom: solid 1px #222222;
+//   transform: skew(-45deg);
+//   // ↓矢印の位置
+//   position: absolute;
+//   top: -8rem;
+//   left: 25rem;
+// }
+
+// デフォルトのボタンの消し方
+//他のボタンも消えちゃう
+// button{
+//   margin: 0;
+//   padding: 0;
+//   background: none;
+//   border: none;
+//   border-radius: 0;
+//   outline: none;
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   appearance: none;
+// }

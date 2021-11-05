@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+.footer{
+  &__wrapper{
+    max-width: 136.6rem;
+    // max-width: 41.4rem;
+    width: 100%;
+    background-color: #FFF;
+    margin: 0 auto;
+    padding-bottom: 5.1rem;
+    @include tab{
+      padding-bottom: 13.9rem;
+    }
+    @include pc{
+      
+    }
+  }
+  &__flex{
+    display: flex;
+    flex-direction:column-reverse;
+    text-align: center;
+  }
+  &__title{
+    font-size: 1.6rem;
+    color: #2D1B0E;
+    opacity: 1;
+    margin-bottom: 2rem;
+    @include tab{
+      font-size: 3rem;
+      margin-bottom: 4rem;
+    }
+    @include pc{
+      font-size: 3.6rem;
+      margin-bottom: 4.9rem;
+    }
+  }
+  &__img{
+    margin-bottom: 5rem;
+    @include tab{
+      max-width: 128rem;
+      width: 100%;
+      margin-bottom: 15.8rem;
+    }
+    @include pc{
+      max-width: 136.6rem;
+      width: 100%;
+      margin-bottom: 15.8rem;
+    }
+  }
+  &__nav{
+    max-width: 29rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    @include tab{
+      max-width: 59.2rem;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 4rem;
+    }
+    @include pc{
+      max-width: 59.2rem;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 5.2rem;
+    }
+  }
+  &__text{
+    text-align: center;
+    color: #848484;
+  }
+}
+
+// フッターナビ
+.footerNav{
+  &__menu{
+    display: flex;
+    flex-wrap:wrap;
+    @include tab{
+      flex-wrap:nowrap;
+    }
+    @include pc{
+      flex-wrap:nowrap;
+    }
+  }
+}
+.footerNavMenu{
+  &__list{
+    font-size: 1.2rem;
+    color: #151515;
+    opacity: 1;
+    line-height: 2.8;
+    position:relative;
+    text-align: center;
+    @include tab{
+      font-size: 1.3rem;
+    }
+    @include pc{
+      font-size: 1.3rem;
+    }
+  }
+  &__listMiddle{
+    margin-left: 2rem;
+    @include tab{
+      margin-left: 0;
+    }
+  }
+}
+.footerNavMenu__list:after {
+  position: relative;
+  display: inline-block;
+  content: "";
+  background: #151515;//斜め線の色
+  width: 1px;//斜め線の太さ
+  height: 11px;//斜め線の長さ
+  margin: 0 1.1rem;//テキストとの間に左右余白をつくる
+  margin-top: -0.3rem;//斜め線の位置調整
+  vertical-align: middle;
+  @include tab{
+    height: 12px;
+    margin: 0 1.5rem;
+    margin-top: -0.3rem;
+  }
+  @include pc{
+    height: 12px;
+    margin: 0 1.5rem;
+    margin-top: -0.3rem;
+  }
+}
+
+.footerNavMenu li:last-child::after{
+  content: none;
+}
+.footerNavMenu__list:after {
+  transform: rotate(25deg);//角度調整
+}
+

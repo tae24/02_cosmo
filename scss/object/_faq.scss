@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+.faq{
+  &__wrapper{
+    max-width: 136.6rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 14.9rem;
+    @include tab{
+      
+    }
+    @include pc{
+      
+    }
+  }
+  &__title{
+    font-size: 1.2rem;
+    margin-bottom: 5.1rem;
+    margin-left: 1rem;
+    @include tab{
+      font-size: 1.6rem;
+    }
+    @include pc{
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      margin-left: 12rem;
+    }
+  }
+  &__group{
+    max-width: 36.8rem;
+    //水色の線の間の長さ
+    width: 100%;
+    padding-left: 3rem;
+    @include spp{
+      padding-left: 0;
+    }
+    @include tab{
+      max-width: 70rem;
+      margin-left: 13rem;
+    }
+    @include pc{
+      max-width: 120rem;
+      margin-left: 23.7rem;
+    }
+  }
+  &__unit{
+    max-width: 28.9rem;
+    //Qのはじまでの長さ
+    width: 100%;
+    margin: 0 auto;
+    @include tab{
+      max-width: 50rem;
+    }
+    @include pc{
+      max-width: 78rem;
+    }
+  }
+  &__outer{
+    max-width: 28.9rem;
+    width: 100%;
+    @include tab{
+      max-width: 50rem;
+    }
+    @include pc{
+      max-width: 74.6rem;
+    }
+  }
+  &__question{
+    font-size: 1.6rem;
+    line-height: 2;
+    @include pc{
+      font-size: 1.8rem;
+    }
+  }
+  &__inner{
+    max-width: 27.3rem;
+    width: 100%;
+    @include tab{
+      max-width: 50rem;
+    }
+    @include pc{
+      max-width: 74.6rem;
+    }
+  }
+  &__answer{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding: 0 0 2rem 0.5rem;
+  }
+  @include pc{
+
+  }
+}
+
+
+// アコーディオン
+.faq__unit {
+	border-bottom: 1px solid #D3D3D3;
+}
+/*アコーディオンタイトル*/
+.faq__outer {
+  position: relative;
+  /*+マークの位置基準とするためrelative指定*/
+  cursor: pointer;
+  transition: all .5s ease;
+  padding: 2rem 0;
+}
+
+/*アイコンの＋と×*/
+.faq__outer::before,
+.faq__outer::after{
+  position: absolute;
+  content:'';
+  width: 1.5rem;
+  height: 1px;
+  background-color: #191919;
+  @include pc{
+    width: 3rem;
+  }
+  @include pc{
+    width: 3rem;
+  }
+}
+.faq__outer::before{
+  top:48%;
+  left: 29rem;
+  transform: rotate(0deg);
+  @include tab{
+    left: 40rem;
+  }
+  @include pc{
+    left: 74rem;
+  }
+}
+.faq__outer::after{
+  top:48%;
+  left: 29rem;
+  transform: rotate(90deg);
+  @include tab{
+    left: 40rem;
+  }
+  @include pc{
+    left: 74rem;
+  }
+}
+/*closeというクラスがついたら形状変化*/
+.faq__outer.close::before{
+  transform: rotate(0deg);
+}
+
+.faq__outer.close::after{
+  transform: rotate(0deg);
+}
+
+/*アコーディオンで現れるエリア*/
+.faq__inner {
+  display: none;
+  /*はじめは非表示*/
+}

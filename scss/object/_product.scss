@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+.product{
+  &__container{
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    @include tab{
+      max-width: 136.6rem;
+      width: 100%;
+      margin: 0 auto;
+    }
+    @include pc{
+      // padding-left: 84px;
+    }
+  }
+  &__title{ 
+    // font-size: 3rem;
+    // margin-bottom: 3.2rem;
+    // line-height: 4rem;
+    // padding-top: 2.5rem;
+    // margin-left: 2.3rem;
+    &::after{
+      content:"PRODUCT";
+      display:block;
+      font-size: 1.2rem;
+      color:#2D1B0E;
+      position:absolute;
+      top:-19px;
+      left:60px;
+      font-family:Adobe Caslon Pro;
+      @include tab{
+        padding-left: 64px;
+      }
+      @include pc{
+        padding-left: 84px;
+      }
+    }
+    @include tab{
+      margin-top: 15rem;
+      // font-size: 3.5rem;
+      // max-width: 1366px;
+      // padding-left: 64px;
+      // padding-top: 40px;
+    }
+    // @include pc{
+    //   font-size: 3.8rem;
+    //   max-width: 1366px;
+    //   padding-left: 84px;
+    // }
+  }
+  &__cards{
+    padding-bottom: 4rem;
+    @include tab{
+      display:grid;
+      // grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      padding-left: 64px;
+    }
+    @include pc{
+      padding-left: 84px;
+    }
+  }
+  &__unit{
+    margin-top: 5rem;
+  }
+  &__box{
+    max-width: 30rem;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+  &__emphasis{
+    position: absolute;
+    top: -4rem;
+    // left: 25rem;
+    left: 85%;
+    // left: 70%;
+  }
+} 
+
+.product__cards li:nth-child(2){
+  @include pc{
+    padding-top: 4rem;
+  }
+}
+.product__cards li:nth-child(5){
+  @include pc{
+    padding-top: 4rem;
+  }
+}
+
+// スライダー矢印ボタン
+.productPrev-arrow{
+  // ↓矢印の位置
+  position: absolute;
+  top: -8rem;
+  // left: 35rem;
+  left: 79%;
+}
+.productNext-arrow {
+// ↓矢印の位置
+position: absolute;
+top: -8rem;
+// left: 30rem;
+left: 67%;
+}
+// スライダードット変更
+// ドットのサイズ
+.slick-dots li button:before{
+	font-size:15px!important;
+}
+// ドット横幅
+.slick-dots li{
+  width:10px!important;/*初期値は20px*/
+}
+//ドットの色
+.slick-dots li button:before {
+  color: #F5D377!important;
+  // border: 1px solid #2D1D10;
+  // border-radius: 50%;
+}
+
+
+
+// color: #F5D377;
+
+// NEWの疑似要素
+// .product__cards li:nth-child(1),li:nth-child(2){
+//   &::before{
+//     content: "NEWS";
+//     font-size: 1.8rem;
+//     display: inline-block;
+//     background-color: #F5D377;
+//     width: 80px;
+//     height: 80px;
+//     color: #2D1B0E;
+//     border-radius: 50%;
+//     line-height: 80px;
+//     /* ←文字を上下に中央揃え */
+//     text-align: center;
+//     /* ←文字を左右に中央揃え */
+//     position: absolute;
+//     top: -4rem;
+//     left: 25rem;
+// }
+// }

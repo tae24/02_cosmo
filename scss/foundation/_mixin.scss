@@ -1,0 +1,61 @@
+@charset "utf-8"; 
+
+// レスポンシブ
+//--------------------------------------------------
+// RESPONSIVE
+// @include tab {}
+// @include pc {}
+//--------------------------------------------------
+
+
+$pc: 1280px;
+$tab: 768px;
+$sp: 767px;
+$spp: 320px;  //SE用
+
+@mixin pc {
+    @media (min-width: ($pc)) {
+        @content;
+    }
+}
+@mixin tab {
+    @media (min-width: ($tab)) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+}
+
+@mixin spp {
+    @media (max-width: ($spp)) {
+        @content;
+    }
+}
+
+
+
+// @include tab{
+
+// }
+// @include pc{
+
+// }
+
+// @include sp{
+
+// }
+
+// spmax
+// max-width: 368px;
+
+// pcmax
+// max-width: 1366px;
+
+
+
+
+// @include

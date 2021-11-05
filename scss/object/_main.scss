@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+.main{
+  &__container{
+    // 背景を白にするために
+    // background-color: #FFF;
+    // height: 45rem;
+    // margin-bottom: 20rem;
+    // max-width: 76.7rem;
+    max-width: 136.6rem;
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 75%, #FFF7F7 0%, #FFF7F7 0%);
+    @include tab{
+      max-width: 136.6rem;
+      width: 100%;
+      margin: 0 auto;
+      background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%, #FFF7F7 0%, #FFF7F7 0%);
+    }
+    @include pc{
+      // max-width: 1366px;
+    }
+  }
+  &__img{
+    width: 90%;
+    margin-bottom: 10rem;
+    @include tab{
+      display: none;
+    }
+  }
+  &__wrapper{
+    position: absolute;
+    top: 54%;
+    @include tab{
+      top:47rem;
+      padding-left: 10rem;
+    }
+    @include pc{
+      top:60rem;
+      padding-left: 13.6rem;
+    }
+  }
+  &__lead{
+    font-size: 5rem;
+    max-width: 27rem;
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 2.8rem;
+    margin-bottom: 1.4rem;
+    @include tab{
+      font-size: 5.8rem;
+      max-width: 76.8rem;
+      width: 100%;
+    }
+    @include pc{
+      font-size: 6.7rem;
+      max-width: 128.3rem;
+      width: 100%;
+    }
+  }
+  &__text{
+    font-size: 1.4rem;
+    letter-spacing: 0.07rem;
+    line-height: 1.8rem;
+    color: #2D1B0E;
+    max-width: 368px;
+    width: 80%;
+    margin-left: 28px;
+    @include tab{
+      font-size: 1.3rem;
+      max-width: 76.8rem;
+      width: 90%;
+    }
+    @include pc{
+      font-size: 1.5rem;
+      max-width: 128.3rem;
+      width: 100%;
+    }
+  }
+}
+
+//右の文字
+.vertical {
+  &__box{
+    // position: relative;
+    @include tab{
+      position: absolute;
+      top:30rem;
+      left: 97%;
+    }
+    @include pc{
+      position: absolute;
+      top:30rem;
+      left: 95%;
+    }
+  }
+  &__text{
+    @include sp{
+      display: none;
+    }
+    @include tab{
+      font-size: 1.2rem;
+      writing-mode: vertical-rl;
+    }
+    @include pc{
+      font-size: 1.2rem;
+      writing-mode: vertical-rl;
+    }
+  }
+}
+
+// スライダー
+.slider {
+  &__container{
+    max-width: 136.6rem;
+    width: 100%;
+  }
+  &__img{
+    max-width: 128.3rem;
+    width: 95%;
+    height: auto;
+    @include sp{
+      display: none;
+    }
+  }
+}
+
+// スライダー矢印ボタン
+.mainPrev-arrow{
+  @include tab{
+    // ↓矢印の位置
+    position: absolute;
+    top: 35rem;
+    left: 97%;
+  }
+  @include pc{
+    // ↓矢印の位置
+    position: absolute;
+    top: 65rem;
+    left: 97%;
+  }
+}
+
+/*========= 流れるテキスト ===============*/
+
+/*全共通*/
+
+.slideIn {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.slideIn__inner {
+  display: inline-block;
+}
+
+/* 上下のアニメーション*/
+.downAnime{
+  opacity: 0;/* 事前に透過0 にして消しておく*/
+}
+
+.slideAnimeDownUp {
+  animation-name:slideTextY100;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+}
+
+@keyframes slideTextY100 {
+  from {
+      transform: translateY(100%);/* 要素を上の枠外に移動*/
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);/* 要素を元の位置に移動*/
+      opacity: 1;
+  }
+}
+
+// leadとtextバラバラにフェードイン
+// .slideAnimeUpDown {
+//   animation-name:slideTextY-100;
+//   animation-duration:0.8s;
+//   animation-fill-mode:forwards;
+//   opacity: 0;
+// }
+
+// @keyframes slideTextY-100 {
+//   from {
+//       transform: translateY(-100%);/* 要素を下の枠外に移動*/
+//       opacity: 0;
+//   }
+//   to {
+//       transform: translateY(0);/* 要素を元の位置に移動*/
+//       opacity: 1;
+//   }
+// }
+
+
+
+

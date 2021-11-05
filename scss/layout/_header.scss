@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+.header{
+  &__container{
+    max-width: 136.6rem;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FFF;
+    @include tab{
+      max-width: 136.6rem;
+      width: 100%;
+      margin: 0 auto;
+    }
+    @include pc{
+      
+    }
+  }
+  // &__wrapper{
+  //   background-color: #FFF;
+  // }
+  // &__nav{
+  //   width: 100%;
+  //   margin: 0 auto;
+  //   @include tab{
+  //     max-width: 1366px;
+  //   }
+  // }
+  &__title{
+    font-size: 2.1rem;
+    padding: 3.9rem 0;
+    margin-left: 2.3rem;
+    @include tab{
+      padding: 4.5rem 0 9.3rem 0;
+      font-size: 2.5rem;
+      margin-left: 8.4rem;
+    }
+    @include pc{
+      font-size: 2.8rem;
+      padding-left: 84px;
+    }
+  }
+}
+
+.header__title:hover {
+  opacity: 0.5;
+}
+
+
+/*============
+// バツボタン
+=============*/
+
+.bar{
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 1px;
+  background-color: #333;
+  transition: all .5s;
+  &__top{
+    top: 4px;
+  }
+  &__bottom{
+    bottom: 4px;
+  }
+}
+
+/*============
+.burger__btn
+=============*/
+.burger{
+  &__btn{
+    display: block;
+    position: fixed;
+    // position: absolute;
+    top: 15px;
+    right: 50px;
+    width: 40px;
+    height: 20px;
+    transition: all .5s;
+    cursor: pointer;
+    z-index: 99;
+    margin-top: 2.5rem;
+    @include tab{
+      // max-width: 1366px;
+      // width: 10%;
+      // margin-left: 5rem;
+    }
+    @include pc{
+      max-width: 136.6rem;
+      width: 11.5%;
+      // 大きい画面での日本線の位置
+    }
+  }
+}
+
+// バツになる
+.bar__top.active{
+  top: 4px;
+  transform: translateY(4.8px) rotate(-45deg);
+}
+.bar__bottom.active{
+  bottom: 5px;
+  transform: translateY(-4.8px) rotate(45deg);
+}
+
+
+
+.globalNav{
+  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+  position:fixed;
+  z-index: 9;
+  /*ナビのスタート位置と形状*/
+  top:0;
+  right: -120%;
+  width:78%;
+  /*ナビの高さ*/
+  // height: 736px;
+  /*表示する高さ*/
+  height: 100vh;
+  background:#FFFFFF;
+  opacity: 0.8;
+  /*動き*/
+  transition: all 0.6s;
+}
+
+/*アクティブクラスがついたら位置を0に右から出てくる*/
+.globalNav.panelactive{
+  right: 0;
+}
+/*アクティブクラスがついたら位置を0に右から出てくる
+メニューをクリックしても閉じる*/
+.globalNavMenu__list.panelactive{
+  right: 0;
+}
+
+// メニューの中
+.globalNavMenu{
+  position: absolute;
+  // z-index: 999;
+  top:45%;
+  left:40%;
+  transform: translate(-50%,-50%);
+  &__link{
+    color: #2E1C10;
+    text-decoration: none;
+    padding:30px;
+    display: block;
+    // text-transform: uppercase;
+    // letter-spacing: 0.1em;
+    font-weight: bold;
+    font-size: 2.4rem;
+    @include tab{
+      font-size: 3.0rem;
+    }
+    @include pc{
+      font-size: 4rem;
+    }
+  }
+}
+
